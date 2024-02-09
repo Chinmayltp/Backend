@@ -9,7 +9,7 @@ mongoDB();
 
 app.use(
   cors({
-    origin: "https://merncapastoneproject-udtj.onrender.com",
+    origin: "http://localhost:5000",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     headers: ["Content-Type"],
     credentials: true,
@@ -19,7 +19,7 @@ app.use(
 );
 
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "https://merncapastoneproject-udtj.onrender.com");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5000");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
